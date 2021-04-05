@@ -16,7 +16,7 @@ import firebase from "firebase";
 
 // const miniCardData = useSelector(state => {return state.cardData})
 
-// https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=songs&type=video&key=AIzaSyCUqzWnPjhW5ALdhvCbRaAREPBWXuTrkmM
+// https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=songs&type=video&key=AIzaSyCUqzWnPjhW5ALdhvCbRaAREPBW
 
 export default class SearchScreen extends React.Component {
   constructor() {
@@ -34,7 +34,7 @@ export default class SearchScreen extends React.Component {
       loading: true,
     });
     fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${this.state.searchValue}&type=video&key=AIzaSyCUqzWnPjhW5ALdhvCbRaAREPBWXuTrkmM`
+      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${this.state.searchValue}&type=video&key=AIzaSyCUqzWnPjhW5ALdhvCbRaAREPBW`
     )
       .then((res) => res.json())
       .then((data) => {
